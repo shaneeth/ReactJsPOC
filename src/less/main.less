@@ -1,0 +1,41 @@
+@bodyColor: #FFFFFF;
+
+body {
+  background-color: @bodyColor;
+}
+
+.comment-box {
+  background-color: #E5E5E5;
+  .comment-list {
+    background-color: #80DEEA;
+    .comment {
+      background-color: #81C784;
+      .comment-author {
+        background-color: #FF8A65;
+      }
+      .remove-comment {
+        float: right;
+        cursor: pointer;
+      }
+    }
+  }
+  .comment-form {
+    background-color: #B3E5FC;
+  }
+}
+
+.comment-an-enter {
+  opacity: 0.1;
+  &.comment-an-enter-active {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+  }
+}
+
+.comment-an-leave {
+  opacity: 1;
+  &.comment-an-leave-active {
+    opacity: 0.1;
+    transition: opacity 1s ease-in;
+  }
+}
